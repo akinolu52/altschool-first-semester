@@ -8,8 +8,6 @@
     <title>wp-pusher</title>
     <style type="text/css">
         * {
-            /* outline: 1px solid red;
-            outline-offset: -1px; */
             font-weight: 400;
         }
     </style>
@@ -17,11 +15,11 @@
 
 <body>
     <section class="bg-[#F5F8FA] w-full h-full pb-16 md:pb-4">
-        <header class="flex items-center justify-between mx-10 pt-7 pb-[1.875rem] border-b-2 border-[#E0E6EA]">
-            <img src="img/logo.png" alt="logo" class="w-[200px] h-10" />
+        <header class="flex flex-col md:flex-row items-center justify-between mx-6 md:mx-10 pt-4 md:pt-7 pb-4 md:pb-[1.875rem] border-b-2 border-[#E0E6EA]">
+            <img src="./img/logo.png" alt="logo" class="w-[80px] md:w-[200px] h-7 md:h-10" />
 
             <nav>
-                <ul class="flex items-center gap-11">
+                <ul class="flex items-center gap-3 md:gap-11">
                     <li>
                         <a href="#" class="text-[#1D2C3C] text-sm font-bold font-['Lato']">Download</a>
                     </li>
@@ -34,22 +32,22 @@
                     <li>
                         <a href="#" class="text-[#1D2C3C] text-sm font-bold font-['Lato']">Help</a>
                     </li>
-                    <li class="rounded-md border-2 border-gray-500 h-10 px-5 flex items-center">
+                    <li class="rounded-md border-2 border-gray-500 h-6 md:h-10 px-3 md:px-5 flex items-center">
                         <a href="#" class="text-[#1D2C3C] text-sm font-bold font-['Lato']">Account</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <main class="w-full mt-[5.3125rem] flex gap-8 flex-col items-center justify-center">
-            <section class="w-7/12 flex bg-white rounded-md shadow overflow-hidden">
-                <div class="w-3/4">
+        <main class="w-full mt-8 md:mt-[5.3125rem] p-4 flex gap-5 md:gap-8 flex-col items-center justify-center">
+            <section class="w-full md:w-7/12 flex flex-col-reverse md:flex-row bg-white rounded-md shadow overflow-hidden">
+                <div class="w-full md:w-3/4">
                     <form action="#" class="">
-                        <div class="pt-10 px-12 pb-6 border-b-2 border-[#F5F7FA]">
+                        <div class="pt-6 md:pt-10 px-8 md:px-12 pb-6 border-b-2 border-[#F5F7FA]">
                             <h1 class="text-[#1D2C3C] text-3xl font-['Lato']">Checkout</h1>
                         </div>
 
-                        <div class="pt-9 px-[3.125rem] border-b-2 border-[#F5F7FA]">
+                        <div class="pt-5 md:pt-9 px-9 md:px-[3.125rem] border-b-2 border-[#F5F7FA]">
                             <div class="flex items-center gap-2.5 mb-2">
                                 <div
                                     class="size-[1.875rem] color-[#548BC5] rounded-full border-2 border-[#548BC5] text-center text-base font-bold">
@@ -87,7 +85,7 @@
                             </div>
                         </div>
 
-                        <div class="pt-9 px-[3.125rem] pb-10 border-b-2 border-[#F5F7FA]">
+                        <div class="pt-5 md:pt-9 px-9 md:px-[3.125rem] pb-10 border-b-2 border-[#F5F7FA]">
                             <div class="flex items-center gap-2.5 mb-2">
                                 <div
                                     class="size-[1.875rem] color-[#548BC5] rounded-full border-2 border-[#548BC5] text-center text-base font-bold">
@@ -116,12 +114,12 @@
                             </div>
                         </div>
 
-                        <div class="pt-9 px-[3.125rem] pb-10 border-b-2 border-[#F5F7FA] flex items-center flex-col">
+                        <div class="pt-5 md:pt-9 px-9 md:px-[3.125rem] pb-10 border-b-2 border-[#F5F7FA] flex items-center flex-col">
                             <button
                                 class="text-center rounded-sm text-white text-base font-semibold font-['Sofia Pro'] bg-[#038E7D] tracking-tight w-full h-12 shadow-inner">Buy
                                 WP Pusher</button>
 
-                            <p class="flex gap-2.5 items-center text-[#646E7A] mt-6 text-sm font-normal font-['Lato']">
+                            <p class="flex flex-col md:flex-row gap-2.5 items-center text-[#646E7A] mt-6 text-sm font-normal font-['Lato']">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -133,25 +131,25 @@
                                 Don’t hesitate to contact support!
                             </p>
 
-                            <img alt="stripe" src="img/powered_by_stripe.png" class="mt-5" />
+                            <img alt="stripe" src="./img/powered_by_stripe.png" class="mt-5" />
                         </div>
                     </form>
                 </div>
 
-                <div class="w-5/12 bg-[#1179BF] text-white px-11 py-10">
+                <div class="w-full md:w-5/12 bg-[#1179BF] text-white px-11 py-10">
                     <h4 class="text-white text-xl font-bold font-['Lato'] mb-1">Freelancer</h4>
 
-                    <h2 class="text-6xl">
-                        <sup class="font-bold">$</sup>
+                    <h2 class="text-6xl font-light relative pl-4">
+                        <sup class="font-bold text-lg left-0 top-0 absolute">$</sup>
                         99
-                        <sup class="font-bold">/year</sup>
+                        <sub class="font-bold text-lg">/ year</sub>
                     </h2>
 
-                    <em class="text-base font-normal font-['Lato'] leading-normal mt-1">Automatically renews after 1
+                    <em class="text-base font-normal font-['Lato'] leading-normal mt-2">Automatically renews after 1
                         year</em>
 
-                    <ul class="mt-9">
-                        <li class="flex items-center gap-2 text-white">
+                    <ul class="mt-9 pb-9">
+                        <li class="flex items-center gap-2 text-white mb-4">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -161,7 +159,7 @@
 
                             Use on 5 client sites
                         </li>
-                        <li class="flex items-center gap-2 text-white">
+                        <li class="flex items-center gap-2 text-white mb-4">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -171,7 +169,7 @@
 
                             Private repositories
                         </li>
-                        <li class="flex items-center gap-2 text-white">
+                        <li class="flex items-center gap-2 text-white mb-4">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -182,10 +180,31 @@
                             Email support
                         </li>
                     </ul>
+
+                    <div class="text-base font-['Lato']">
+                        <p>Need <b>20</b> client sites?</p>
+
+                        <p class="font-bold">Switch to the <em>Agency</em> plan.</p>
+                        <div class="h-[4px] opacity-50 bg-[#B9F5FF] -mt-2 w-[180px]"></div>
+                    </div>
+
+                    <div class="h-[2px] opacity-20 bg-white my-10"></div>
+
+                    <div class="italics text-white text-lg font-['Lato'] leading-normal mb-6">
+                        FTP is horrible to deal with. <em class="font-bold">WP Pusher</em> solves that issue, and the
+                        customer support is
+                        awesome!
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <img alt="user" src="./img/user.png" class="rounded-full size-10" />
+                        <p class="text-base font-bold font-['Lato']">Kirk Beard</p>
+                    </div>
                 </div>
             </section>
 
-            <footer>&copy; 2018 WP Pusher IVS · <a href="#">Terms of Service</a></footer>
+            <footer class="text-sm text-[#636B6F]">&copy; 2018 WP Pusher IVS · <a href="#" class="text-[#31708F]">Terms
+                    of Service</a></footer>
         </main>
     </section>
 </body>
